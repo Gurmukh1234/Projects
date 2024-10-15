@@ -1,0 +1,144 @@
+:root {
+  --clr-neutal-200: #fafafa;
+  --clr-neutal-400: #696969;
+  --clr-neutal-600: #141414;
+  --ff-epilogue: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+/* Header*/
+header {
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.75rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-content: flex-end;
+  gap: 250px;
+}
+
+.nav-btn-container,
+.primary-nav {
+  display: none;
+}
+
+.navbar-toggle-btn {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  margin-right: auto;
+}
+
+.primary-nav ul {
+  padding: 0;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list a {
+  display: flex;
+  gap: 6px;
+  color: inherit;
+}
+.nav-btn-container {
+  margin-left: auto;
+}
+
+.nav-list span {
+  display: flex;
+  align-items: center;
+}
+@media (width>=768px) {
+}
+
+/* Hero*/
+
+.hero-section {
+  padding-inline: 0.5rem;
+  width: 100%;
+  margin-inline: auto;
+}
+.hero-text-container {
+  padding-block: 2rem;
+  text-align: center;
+}
+
+.hero-text-container h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-text-container p {
+  margin-bottom: 1rem;
+}
+
+.logos-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.hero-text-container button {
+  margin-bottom: 2rem;
+}
+
+@media (width>=576px) {
+  .hero-section {
+    width: 576px;
+  }
+}
+
+@media (width>=768px) {
+  .hero-section {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .hero-text-container {
+    order: 1;
+    text-align: left;
+    width: 55%;
+    padding: 0;
+  }
+
+  .hero-text-container h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text-container p {
+    color: var(--clr-neutal-400);
+  }
+  .hero-img-container {
+    order: 2;
+    width: 38%;
+  }
+
+  .navbar-toggle-btn {
+    display: none;
+  }
+  .nav-btn-container,
+  .primary-nav {
+    display: block;
+  }
+}

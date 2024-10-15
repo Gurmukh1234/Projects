@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        background-color: #eee;
+        color: #111;
+      }
+      main {
+        min-height: 100vh;
+        /* perspective: 1rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        position: relative;
+        font-size: 1.2rem;
+        color: #eee;
+        background-color: #111;
+        border: none;
+        cursor: pointer;
+        border-radius: 12px;
+        padding: 0.8rem 1.75rem;
+
+        transition-property: background-color, color, shadow, transform;
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+        /* slow-start, fast-mid, slow-end*/
+        transition-timing-function: ease;
+        /* slow-start, fast-mid, fast-end*/
+        transition-timing-function: ease-in;
+        /* fast-start, slow-mid, slow-end*/
+        transition-timing-function: ease-out;
+        /* same speed*/
+        transition-timing-function: linear;
+        /* slow-start, fast-mid, slow-end*/
+        transition-timing-function: ease-in-out;
+        transition-timing-function: cubic-bezier(0.42, 0, 0.56, 1.36);
+
+        /* Transform*/
+        /* transform: translateX(3rem); */
+        /* transform: translateX(-3rem); */
+        /* transform: translateY(-3rem); */
+        /* transform: translate(3rem, 3rem); */
+        /* transform: scale(1); default */
+        /* transform: scale(1.5); */
+        /* transform: rotate(40deg); */
+        /* transform: rotateY(45deg); */
+        /* transform: rotateZ(90deg); */
+        /* transform: rotateY(49deg); */
+        /* transform: skewX(30deg); */
+        /* transform: skewY(30deg);
+        transform: skew(30deg, 40deg); */
+        /* transform: rotateX(60deg); */
+        transform: translateZ(30px) rotateY(50deg);
+      }
+      button:hover {
+        transform: translateZ(20px) rotateY(30deg);
+        background-color: lightgreen;
+        color: #111;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <button>Click me</button>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{"timestamp":356964398,"category":"nimbus_events","name":"unenrollment","extra":{"branch":"control","reason":"pref-variable-missing","experiment":"serp-ad-telemetry-rollout-previous-to-118","glean_timestamp":"1727259169438"}}
+{"timestamp":356964400,"category":"nimbus_events","name":"unenrollment","extra":{"experiment":"extensions-migration-in-import-wizard-116-rollout","glean_timestamp":"1727259169440","branch":"control","reason":"pref-variable-missing"}}
+{"timestamp":356965153,"category":"nimbus_events","name":"enrollment","extra":{"experiment_type":"rollout","branch":"rollout","glean_timestamp":"1727259170193","experiment":"ech-roll-out"}}
+{"timestamp":356965157,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","glean_timestamp":"1727259170197","experiment":"extensions-migration-in-import-wizard-116-rollout"}}
+{"timestamp":356965513,"category":"nimbus_events","name":"enrollment","extra":{"branch":"treatment","experiment_type":"rollout","experiment":"device-migration-q4-spotlights-remaining-population","glean_timestamp":"1727259170553"}}
+{"timestamp":356965521,"category":"nimbus_events","name":"enrollment","extra":{"experiment_type":"rollout","glean_timestamp":"1727259170561","branch":"rollout","experiment":"phc-rollout"}}
+{"timestamp":356965564,"category":"nimbus_events","name":"enrollment","extra":{"glean_timestamp":"1727259170604","experiment_type":"rollout","branch":"treatment","experiment":"highlighting-in-pdfs-rollout"}}
+{"timestamp":356965573,"category":"nimbus_events","name":"validation_failed","extra":{"feature":"addAnImageInPDF","reason":"invalid-feature","experiment":"add-an-image-to-pdf-with-alt-text-rollout","glean_timestamp":"1727259170613"}}

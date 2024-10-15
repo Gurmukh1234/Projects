@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #ccc;
+        color: #111;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      /* @media rule*/
+      /* 
+        @media screen and (width>700px){
+            body{
+                background-color: blue;
+            }
+        } */
+      /* @media screen and (min-width: 700px) {
+        body {
+          background-color: blue;
+        }
+      } */
+
+      /* @media screen and (max-width: 700px) {
+        body {
+          background-color: blue;
+        }
+      } */
+
+      /* @media screen and (min-width: 400px) and (max-width: 700px) {
+        body {
+          background-color: blue;
+        }
+      } */
+
+      /* @media (orientation: portrait) {
+        body {
+          background-color: blue;
+        }
+      } */
+      /* @media (orientation: landscape) {
+        body {
+          background-color: blue;
+        }
+      } */
+      /*mobile-portrait*/
+      .heading-one {
+        font-size: 1.2rem;
+      }
+      /*mobile-landscape*/
+      @media (min-width: 576px) {
+        .heading-one {
+          font-size: 1.4rem;
+        }
+      }
+
+      /*tablet*/
+      @media (min-width: 768px) {
+        .heading-one {
+          font-size: 1.6rem;
+        }
+      }
+
+      /*laptop*/
+      @media (min-width: 992px) {
+        .heading-one {
+          font-size: 2rem;
+        }
+      }
+
+      /*extra-large-device*/
+      @media (min-width: 1200px) {
+        .heading-one {
+          font-size: 3rem;
+        }
+      }
+
+      .links {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .links li {
+        background-color: rgb;
+        padding: 0.2rem 0.4rem;
+        list-style: none;
+        text-align: center;
+      }
+
+      /* mobile landscape*/
+      @media (min-width: 576px) {
+        .links {
+          flex-direction: row;
+          justify-content: center;
+          gap: 2rem;
+        }
+      }
+
+      .shadow {
+        color: #ccc;
+        text-shadow: 2px 0px 3px red;
+      }
+
+      .links li {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.516);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="shadow">Media Query</h1>
+    <h1 class="heading-one">Hello, World</h1>
+
+    <nav>
+      <ul class="links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>

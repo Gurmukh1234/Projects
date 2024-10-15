@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: { 50: "#ff373d", 100: "#fa0a" },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1
+      class="flex font-bold text-3xl underline justify-center text-clifford-50"
+    >
+      Colors
+    </h1>
+    <p class="bg-slate-500">Paragraph</p>
+    <!--  color from range 50 to 950-  light to darker
+      orange,teal,yellow,green,purple,grey,neutral,red,pink,amber,lime,emarald,cyan,blue,violet,rose,slate,zinc-->
+    <p class="bg-zinc-500">Paragraph</p>
+    <p class="bg-teal-500">Paragraph</p>
+    <p class="bg-orange-850">Paragraph</p>
+    <p class="bg-yellow-350">Paragraph</p>
+    <p class="bg-grey-450">Paragraph</p>
+    <p class="bg-neutal-850">Paragraph</p>
+    <p class="bg-purple-500">Paragraph</p>
+    <p class="bg-pink-500">Paragraph</p>
+    <p class="bg-amber-650">Paragraph</p>
+    <p class="bg-emarald-850">Paragraph</p>
+    <p class="bg-lime-250">Paragraph</p>
+    <p class="bg-cyan-350">Paragraph</p>
+    <p class="bg-violet-250">Paragraph</p>
+    <p class="bg-red-250">Paragraph</p>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+HTML stands for HYPERTEXT mARKUP Language
+It describes the structure of webpage using mARKUP
+Used to provide the content(words,images,audio,vido and so on)to the webpages
+It is a tag based language.
+Defined within angle brackets
+HTML file can be created using text editor

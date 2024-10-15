@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontSize: { 50: "100px", 100: "200px" },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <h1 class="flex font-bold text-3xl underline justify-center">Typography</h1>
+    <p class="text-4xl line-clamp-[10]">Large</p>
+
+    <br />
+    <p class="text-4xl font-regular">Large</p>
+
+    <p class="text-4xl font-regular underline tracking-tighter">Large</p>
+    <p class="text-4xl font-regular underline tracking-widest">Large</p>
+    <p class="text-4xl font-regular underline-offst-1">Large</p>
+    <p class="text-4xl font-regular hover:underline">Large</p>
+    <br />
+    <p class="text-4xl font-light">Typography</p>
+    <p class="text-4xl font-thin">Typography</p>
+    <p class="text-4xl font-regular">Typography</p>
+    <p class="text-4xl font-medium">Typography</p>
+    <p class="text-4xl font-semibold">Typography</p>
+    <p class="text-4xl font-bold">Typography</p>
+    <p class="text-4xl font-extrabold">Typography</p>
+    <p class="text-4xl font-black">Typography</p>
+    <br />
+    <p class="text-xs">Typography</p>
+    <p class="text-sm">Typography</p>
+    <p class="text-base">Typography</p>
+    <p class="text-lg">Typography</p>
+    <p class="text-xl">Typography</p>
+    <p class="text-2xl">Typography</p>
+    <p class="text-3xl">Typography</p>
+    <p class="text-4xl">Typography</p>
+    <p class="text-5xl">Typography</p>
+    <p class="text-6xl">Typography</p>
+    <p class="text-7xl">Typography</p>
+    <p class="text-8xl">Typography</p>
+  </body>
+</html>

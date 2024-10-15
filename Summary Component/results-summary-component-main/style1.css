@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+p,
+span,
+.right-container div,
+button {
+  font-size: 18px;
+}
+
+main {
+  width: 40vw;
+  height: 65vh;
+  display: flex;
+  margin: 15vh auto 60px;
+  box-shadow: 2px 10px 25px 15px hsl(221, 100%, 96%);
+  border-radius: 10%;
+}
+
+.left-container {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 10%;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  padding: 5vh 0;
+}
+
+#left-title {
+  font-size: 1.25rem;
+}
+
+.score {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+}
+
+.score-container {
+  height: 170px;
+  width: 170px;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  text-align: center;
+  margin: 4vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.greet {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+  margin: 0 0 2vh;
+}
+
+.right-container {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0 10% 10% 0;
+  padding: 20px;
+}
+
+.right-container p {
+  color: hsl(225, 30%, 43%);
+}
+
+#right-title {
+  color: hsl(224, 30%, 27%);
+  margin: 0 0 20px;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12.5%;
+  border-radius: 10px;
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+svg {
+  margin: 0 10px 0 0;
+}
+
+.box-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-scores {
+  font-weight: 700;
+  color: black;
+}
+
+.memory strong {
+  color: #ffb21e;
+}
+
+.memory {
+  background-color: hsl(36, 100%, 95%);
+}
+
+.reaction strong {
+  color: #f55;
+}
+
+.reaction {
+  background-color: #ffebeb;
+}
+
+.verbal strong {
+  color: #00bb8f;
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 96%);
+}
+
+.visual strong {
+  color: #1125d6;
+}
+
+.visual {
+  background-color: hsl(233, 100%, 95%);
+}
+
+button {
+  height: 50px;
+  width: 90%;
+  border-radius: 50px;
+  margin: 0 5%;
+  border: none;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+}
+
+button:hover {
+  background-color: #1125d6;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .left-container {
+    width: 100%;
+    border-radius: 0 0 10% 10%;
+  }
+  .score {
+    font-size: 2rem;
+  }
+  .score-container {
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+  }
+  .greet {
+    font-size: 1.2rem;
+  }
+  .right-container {
+    width: 100%;
+    border-radius: 0 0 10% 10%;
+  }
+}

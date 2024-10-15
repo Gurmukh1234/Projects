@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        background-color: #111;
+        color: #ccc;
+        min-height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      @keyframes firstAnimation {
+        from {
+          transform: translateX(-12rem);
+        }
+        to {
+          transform: translateX(0rem);
+        }
+      }
+
+      h1 {
+        animation-name: firstAnimation;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 5;
+        /*from - to*/
+        animation-direction: normal;
+        /* to - from*/
+        animation-direction: reverse;
+        /* from - to, to - from*/
+        animation-direction: alternate;
+        /*original| from | to| original */
+        animation-fill-mode: none;
+        /*original| from | to */
+        animation-fill-mode: forwards;
+        /*from | to| original */
+        animation-fill-mode: backwards;
+        /*from | to */
+        animation-fill-mode: both;
+
+        transform: translateX(-7rem);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation Property</h1>
+  </body>
+</html>

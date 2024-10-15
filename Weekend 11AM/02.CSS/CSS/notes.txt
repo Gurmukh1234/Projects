@@ -1,0 +1,200 @@
+CSS Introductrion:
+
+CSS stands for Cascading Style Sheet
+CSS describes how HTML elements need to be presented on the screen
+CSS can control the layout of multiple webpages all at once
+Includes adding visuals like color,fonts,layout(mobile,web,tablet,animation etc)
+
+The syntax of CSS :
+selector{
+
+    properties;
+    color:red;
+}
+Each property ends with a semicolon
+Each property includes a CSS property name and a value, separated by colon
+
+CSS Comment:
+A CSS comment starts with /* and ends with */
+Comments can also span multiple lines
+
+Adding CSS to HTML page
+There are 3 ways to add CSS style in your HTML document
+Inline Styles
+Internal Styles
+External Styles
+
+Inline Styles:
+<p style="color: blue; font-size: 40px">Inline CSS</p>
+
+Internal Styles:
+Example:
+
+<head>
+<style>
+h1{
+
+    color:red;
+    font-size:50px;
+}
+
+</style>
+
+</head>
+
+External Styles
+
+home.html
+<head>
+<link rel="stylesheet" href="./style.css" />
+</head>
+
+style.css
+h1{
+
+    color:red;
+    font-size:50px;
+}
+
+selectors in CSS
+root-selector: Select all elements at once
+
+*{
+    background-color:red;
+}
+
+element-selector:
+select single element by its name
+
+span{
+    background-color:red;
+}
+
+id -selector:
+ select element with id attribute. One element can have only one id
+ #red{
+    background color:red;
+}
+<p id="red"> This is class</p>
+
+class-selector: select element with class attribute. One element can have multiple classes
+.red{
+    background color:red;
+}
+<p class="red"> This is class</p>
+
+Grouping Selector: Select elements in Group
+element1,element2,element3{
+    background color: red;
+}
+
+Nesting Selector: to select child-parent-siblings
+ul li - ul space li means any li inside it
+   ul li {
+        background-color: red;
+      }
+
+      div>b means only b that is just inside div
+      div > b {
+        background-color: red;
+      }
+
+
+Pseudoclass-selectors: For Interaction
+if element: hover written, then that element will got the property whwn user hover on it
+
+:focus mostly work on inputs or buttons whn click only then property applied
+
+    li:hover{
+        background-color: red;
+      }
+
+      .input:focus{
+        background-color: red;
+      }
+
+      Topic-Styling with CSS
+
+      1. COLORS
+      The color poperty is used to set the foreground color of an elements text
+      -By name:
+      140 diff colors named in CSS. Example: orange,red,green,blue,red,lightgrey etc
+
+      -Using rgb
+      Absence of all color is black
+    Presence of all color is white
+    Defined from 0 to 255
+    16581375-Combination possible
+
+    By Hex Code:
+    Similar to rgb but different to written
+    Use hexadecimal numbers- 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f= Total 16
+    ff=255
+    written using #
+    #rrggbb
+
+    Using RGBa:
+    we have to give alpha value for thatTo check transparency from 0 to 1
+    0 for transparent
+
+     - CSS units are used to express size of different properties
+      Expresed as number followed by unit symbol. Ex: 16px,180mm,2rem
+      Many properties use css unit as its value such as width,height,margin,padding,border-size etc
+
+      Two types of CSS units
+      Absolute units
+      The Absolute Units a fixed size/length of element
+      ex- cm,mm(millimeter in inches)(1inch=96px=2.54cm),px(1px=1/96th of 1 inch),pt(points(1 pt=1/72 of 1 inch)),pc(picas, 1pc=12pt)
+
+      Relative Units
+      Relative length units specify a length relative to another length property
+
+      em-relative to font-size of element(parent)
+      rem-relative to font-size of root element
+      vw=relative to 1% of the width of browser window size
+       vh=relative to 1% of the height of browser window size
+       %= relative to the parent element
+
+       border
+
+       Tesxt and Font Styling
+       font-size
+       font-family
+       font-weight
+       font-style
+       color
+
+       text-align
+       text-indent
+       text-transformation
+       text-decoration
+       line-height
+       letter-spacing
+       word-spacing
+       text-shadow
+
+       <!-- Remains in layout but will be hidden and doesn't occupy space-->==Display none
+       display: inline-block;--Remain inline but possess properties of block level element also
+       1rem =16px
+
+       Position- Static(Default), Relative, Absolute, Fixed, Sticky
+                                     |
+                                     Gives 4 properties- top,right,bottom,left
+                                     We give only two properies
+
+Absolute works relative to body and can change if parent has position relative
+Fixed works relative to body      
+Sticky changes from fixed to relative 
+
+
+Media types- Print, Screen, All
+
+Media Features-Orientation=landscape,portrait mode
+width
+height
+max-width
+max-height
+min-width
+min-height
+aspect-ratio
+Theme

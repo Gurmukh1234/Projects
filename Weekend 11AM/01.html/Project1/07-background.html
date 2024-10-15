@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* aspect ration :1/1 shows both width and height are of same value*/
+      .div-1 {
+        height: 18rem;
+        /* solid color */
+
+        background-color: red;
+        background-color: burlywood;
+        background-color: rgba(222, 184, 135, 0.5);
+
+        /* gradient color */
+        background-image: linear-gradient(red, blue);
+        background-image: linear-gradient(red, blue, green);
+        background-image: linear-gradient(to top, red, blue);
+        background-image: linear-gradient(to right, red, blue);
+        background-image: linear-gradient(to left, red, blue);
+        background-image: linear-gradient(150deg, red, blue);
+
+        background-image: radial-gradient(red, blue);
+        background-image: linear-gradient(red 10%, blue 50%);
+
+        background-image: conic-gradient(red, blue);
+        background-image: conic-gradient(from 150deg, red, blue);
+        background-image: conic-gradient(from 90deg, red, blue);
+        background-image: conic-gradient(from 120deg, red, blue);
+        background-image: conic-gradient(from 135deg, red, blue);
+
+        /* opacity:0.5; */
+      }
+
+      .div-2 {
+        /* background-repeat: repeat-x;*/
+
+        height: 25rem;
+        background-image: url();
+        background-size: 20rem;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-position: top left;
+        background-position: bottom right;
+        background-position: bottom centre;
+        background-position: left centre;
+        background-position: centre centre;
+        background-position: centre;
+        background-position: bottom 16px left -16px;
+
+        background-size: 20rem;
+        background-size: 100%;
+        background-size: contain; /* one will be fixed either height or width to show complete image*/
+        background-size: cover; /* cover the whole image like a book cover*/
+
+        background-blend-mode: color-burn;
+        background-attachment: fixed;
+        /*background-attachment- image got fixed only the text will move if on image*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background Property</h1>
+    <!--<div class="div-1">One</div>-->
+    <div class="div-2"></div>
+  </body>
+</html>

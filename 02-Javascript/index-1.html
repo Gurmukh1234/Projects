@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html style="overflow-y: hidden">
+  <head>
+    <title></title>
+
+    <style>
+      #field {
+        line-height: 2px;
+      }
+
+      #field-1 {
+        line-height: 0px;
+        position: relative;
+        bottom: 7px;
+      }
+
+      /* #field-2 {
+        line-height: 4px;
+      } */
+    </style>
+    <meta content="no-cache" http-equiv="Cache-control" />
+    <meta content="no-store" http-equiv="Cache-control" />
+    <meta content="must-revalidate" http-equiv="Cache-control" />
+    <meta http-equiv="Cache-control" max-age="0" />
+    <meta http-equiv="Cache-control" post-check="0" />
+    <meta http-equiv="Cache-control" pre-check="0" />
+    <meta content="no-cache" http-equiv="Pragma" />
+  </head>
+  <body>
+    <p>Hello {{workshop_name}},</p>
+    <p>Hope you are doing well</p>
+    <p>
+      Please find the below details to login in to our Claim Genie workshop
+      application-
+    </p>
+
+    <p id="field">Username - {{email_id}}</p>
+    <p id="field">Password - {{password}}</p>
+    <p id="field">Wokshop Name - {{workshop_name}}</p>
+    <p id="field-2">Application url - {{application_link}}</p>
+    <pi id="field-1">Tutorial Video = https://we.tl/t-5RvQvEy2RI</pi>
+    <br />
+    <p>
+      Thanks & Regards<br />
+      Claim Genie Team
+    </p>
+  </body>
+</html>
